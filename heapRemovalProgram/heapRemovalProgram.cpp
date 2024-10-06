@@ -7,7 +7,7 @@ using namespace std;
 //Initalizing array and variables
 const int ARR_SIZE = 1000;        //Total size of memory allocated array, bigger than is needed
 int n = 500;                     //Area of array actively being used by heap, this number changes as the heap is being manipulated
-int testSize = 50;              //Size of display output for arrays to terminal
+int testSize = 25;              //Size of display output for arrays to terminal
 int sortArr[ARR_SIZE];
 
 //Displays all commands and prompts for user
