@@ -1,6 +1,8 @@
 #include <iostream>
 #include <stdexcept>
 #include <algorithm>  // For swap
+#include <chrono>
+#include <thread>
 using namespace std;
 
 void percolateDown(int arr[], int& n, int index) {
@@ -20,6 +22,7 @@ void percolateDown(int arr[], int& n, int index) {
 	//If the smallest element is no longer the current element, then swap the 
 	if (smallest != index) {
 		cout << "Swaping " << arr[index] << " with " << arr[smallest] << endl;
+		this_thread::sleep_for(chrono::milliseconds(1));
 		swap(arr[index], arr[smallest]);
 		percolateDown(arr, n, smallest); //Recursively percolate down
 	}
@@ -32,6 +35,7 @@ void percolateUp(int arr[], int index) {
 	//If index is not root and if parent is grater than index, swap parent with index.
 	if (index > 0 && arr[parent] > arr[index]) {
 		cout << "Swaping " << arr[parent] << " with " << arr[index] << endl;
+		this_thread::sleep_for(chrono::milliseconds(1));
 		swap(arr[parent], arr[index]);
 		percolateUp(arr, parent);
 	}

@@ -102,23 +102,6 @@ int main() {
     cout << "Type 'help' for a list of commands." << endl;
     displayFunc(sortArr, n, testSize, ARR_SIZE);
 
-    //Array display output
-    /*
-    cout << "\nDisplaying array \n";
-    for (int j = 0; j < testSize; j++) {
-        cout << sortArr[j] << endl;
-    }
-
-
-    //Running Array through heap
-    sortArray(sortArr, n);
-
-    cout << "\nDisplaying Min Heap Array \n";
-    for (int j = 0; j < testSize; j++) {
-        cout << sortArr[j] << endl;
-    }
-    //*/
-
     return 0;
 }
 
